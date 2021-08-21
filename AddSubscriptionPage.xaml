@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="FinanceApp.AddSubscriptionPage"
+    BackgroundColor="LightGreen">
+
+    <StackLayout VerticalOptions="CenterAndExpand"
+                     HorizontalOptions="CenterAndExpand"
+                     Spacing="15">
+            <Label Text="Add your New Subscription"
+                   FontSize="28"
+                   HorizontalOptions="CenterAndExpand"/>
+
+            <Entry x:Name="nameText" Placeholder="Name... Ex: Sports Illustrated"
+                   Text="{Binding SubName}"/>
+
+            <Entry x:Name="categText" Placeholder="Category... Ex: Magazine"
+                   Text="{Binding SubCateg}"/>
+
+            <Entry x:Name="costText" Placeholder="Cost (Rounded Up)... Ex: 6"
+                   Text="{Binding SubCost}"/>
+
+            <Picker x:Name="freqPicker" Title="Select Frequency..."
+                    HorizontalTextAlignment="Start"/>
+        </StackLayout>
+    
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Save"
+                     Clicked="Save_Clicked"
+                     Order="Primary"
+                     Priority="0"/>
+    </ContentPage.ToolbarItems>
+
+</ContentPage>

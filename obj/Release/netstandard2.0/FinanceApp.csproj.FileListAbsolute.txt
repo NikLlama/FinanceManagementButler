@@ -1,0 +1,13 @@
+/Users/nikunjshanker/Projects/FinanceApp/FinanceApp/bin/Release/netstandard2.0/FinanceApp.deps.json
+/Users/nikunjshanker/Projects/FinanceApp/FinanceApp/bin/Release/netstandard2.0/FinanceApp.dll
+/Users/nikunjshanker/Projects/FinanceApp/FinanceApp/bin/Release/netstandard2.0/ref/FinanceApp.dll
+/Users/nikunjshanker/Projects/FinanceApp/FinanceApp/obj/Release/netstandard2.0/FinanceApp.csproj.AssemblyReference.cache
+/Users/nikunjshanker/Projects/FinanceApp/FinanceApp/obj/Release/netstandard2.0/AddSubscriptionPage.xaml.g.cs
+/Users/nikunjshanker/Projects/FinanceApp/FinanceApp/obj/Release/netstandard2.0/App.xaml.g.cs
+/Users/nikunjshanker/Projects/FinanceApp/FinanceApp/obj/Release/netstandard2.0/MainPage.xaml.g.cs
+/Users/nikunjshanker/Projects/FinanceApp/FinanceApp/obj/Release/netstandard2.0/FinanceApp.AssemblyInfoInputs.cache
+/Users/nikunjshanker/Projects/FinanceApp/FinanceApp/obj/Release/netstandard2.0/FinanceApp.AssemblyInfo.cs
+/Users/nikunjshanker/Projects/FinanceApp/FinanceApp/obj/Release/netstandard2.0/FinanceApp.csproj.CoreCompileInputs.cache
+/Users/nikunjshanker/Projects/FinanceApp/FinanceApp/obj/Release/netstandard2.0/XamlC.stamp
+/Users/nikunjshanker/Projects/FinanceApp/FinanceApp/obj/Release/netstandard2.0/FinanceApp.dll
+/Users/nikunjshanker/Projects/FinanceApp/FinanceApp/obj/Release/netstandard2.0/ref/FinanceApp.dll

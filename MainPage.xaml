@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FinanceApp.MainPage"
+             BackgroundColor="SteelBlue">
+
+    <ContentPage.Content>
+        <StackLayout Margin="5,10,5,20" VerticalOptions="FillAndExpand" HorizontalOptions="CenterAndExpand">
+            <Label x:Name="appName"
+                   Text="Financing Control Center"
+                   FontSize="24"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center"
+                   TextColor="GhostWhite"/>
+
+            <ListView x:Name="subscriptionList"
+                      ItemsSource="{Binding Subscriptions}"
+                      SelectedItem="{Binding SelectedSub}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="*"/>
+                                    <RowDefinition Height="*"/>
+                                </Grid.RowDefinitions>
+
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+
+                                <Label Grid.Row="0" Grid.Column="0"
+                                       Text="{Binding Name}"/>
+                                <Label Grid.Row="0" Grid.Column="1"
+                                       Text="{Binding Category}"/>
+                                <Label Grid.Row="1" Grid.Column="0"
+                                       Text="{Binding Cost}"/>
+                                <Label Grid.Row="1" Grid.Column="1"
+                                       Text="{Binding Frequency}"/>
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+
+            <StackLayout Orientation="Horizontal"
+                         HorizontalOptions="Center">
+                <Button x:Name="weeklyButton"
+                    BackgroundColor="GhostWhite"
+                    BorderColor="Black"
+                    Text="Weekly"
+                    WidthRequest="120"
+                    Clicked="weeklyButton_Clicked"/>
+                <Button x:Name="monthlyButton"
+                    BackgroundColor="GhostWhite"
+                    BorderColor="Black"
+                    Text="Monthly"
+                    WidthRequest="120"
+                    Clicked="monthlyButton_Clicked"/>
+                <Button x:Name="yearlyButton"
+                    BackgroundColor="GhostWhite"
+                    BorderColor="Black"
+                    Text="Yearly"
+                    WidthRequest="120"
+                    Clicked="yearlyButton_Clicked"/>
+            </StackLayout>
+
+            <Label x:Name="totalCostText"
+                   Text="Choose your desired payment frequency above"
+                   VerticalOptions="Center"
+                   HorizontalOptions="Center"
+                   TextColor="GhostWhite"/>
+        </StackLayout>
+    </ContentPage.Content>
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Add"
+                     Clicked="Add_Clicked"
+                     Order="Primary"
+                     Priority="0"/>
+    </ContentPage.ToolbarItems>
+
+</ContentPage>
